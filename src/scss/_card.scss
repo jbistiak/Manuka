@@ -1,0 +1,109 @@
+.card {
+  a {
+    color: #1a1937;
+    text-decoration: none;
+  }
+  &:hover {
+    box-shadow: 0 0 30px rgba(32, 29, 41, 0.08);
+    z-index: 10;
+
+    a{
+      text-decoration: underline;
+    }
+  }
+
+  .card-img {
+    img{
+      max-width: 100%;
+    }
+    .badge {
+      text-transform: uppercase;
+      color: $white;
+    }
+    .card-img-overlay{
+      opacity: 1;
+      transition: opacity .4s ease-in-out;
+    }
+
+    &:hover .card-img-overlay {
+      opacity: 0;
+    }
+  }
+
+  h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #1a1937;
+  }
+
+  .quantity-group {
+    border: 1px solid #cfcfcf;
+    transition: all .1s ease;
+    height: 50px;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,.16);
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .quantity-field {
+    //padding: 0 40px;
+    font-size: 14px;
+    text-align: center;
+
+    &:hover, &:active, &:focus{
+      border-color: transparent;
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .btn-quantity {
+    z-index: 1;
+    padding: 0 .5rem;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: $white;
+
+    &:hover {
+      background-color: $yellow;
+    }
+  }
+  .btn-quantity-plus {
+    left: 0;
+  }
+
+  .btn-cart {
+    position: relative;
+    z-index: 10;
+    height: auto;
+    min-width: 100px;
+    white-space: nowrap;
+    width: auto;
+    background-color: $yellow;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #23222B;
+    border-radius: 0;
+    padding: 0 24px;
+
+    &:hover, &:active, &:focus, &:focus-visible{
+      background-color: #f5b800;
+      border-color: #f5b800;
+    }
+  }
+
+}

@@ -1,21 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ locale }}">
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ ogType }}: http://ogp.me/ns/{{ ogType }}#">
+        {{> _head }}
+    </head>
 
-<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# {{ ogType }}: http://ogp.me/ns/{{ ogType }}#">
-  {{> _head }}
-</head>
+    <body>
+        {{> _navbar-top }} {{> _header }} {{> _main-nav }}
+        <main class="container">
+            <!-- Banners -->
+            <div class="row mt-4 mb-3">
+                <div class="col-12 col-sm-8 pe-sm-1 pb-1 pb-sm-0">
+                    <a href="#" class="d-flex h-100 overflow-hidden"
+                        ><img src="./images/banner-hlavni-2.jpg" alt="" class="w-100 object-fit-fill"
+                    /></a>
+                </div>
+                <div class="col-12 col-sm-4 ps-sm-1">
+                    <div class="row h-50">
+                        <div class="col pb-2 pb-sm-1">
+                            <a href="#" class="d-flex h-100 overflow-hidden"
+                                ><img
+                                    src="./images/banner-o-medu-manuka.jpg"
+                                    alt=""
+                                    class="w-100 object-fit-fill transform-scale"
+                            /></a>
+                        </div>
+                    </div>
+                    <div class="row h-50">
+                        <div class="col pt-sm-1">
+                            <a href="#" class="d-flex h-100 overflow-hidden"
+                                ><img
+                                    src="./images/banner-nas-pribeh.jpg"
+                                    alt=""
+                                    class="w-100 object-fit-fill transform-scale"
+                            /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-<body>
-  {{> _header }}
-  <main>
-    <h1>Welcome to VITAM Docs!</h1>
-    <p>VITAM is a front-end template with Vite for static websites.</p>
-    <svg aria-hidden="true">
-      <use href="#icon-file" />
-    </svg>
-  </main>
-  {{> _footer }}
-  <script type="module" src="/ts/main.ts"></script>
-</body>
+            <!-- Benefits -->
+            <div class="row pt-2 pb-3 border border-light border-bottom">
+                <div class="col-12 col-sm-6 col-lg-3 py-4 d-flex align-items-center benefit">
+                    <p class="font-lg ms-3 mb-0 lh-base">
+                        <strong>Nejvyšší kvalita</strong> <br />
+                        z Nového Zélandu
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 py-4 d-flex align-items-center benefit">
+                    <p class="font-lg ms-3 mb-0 lh-base">
+                        <strong>Poštovné zdarma</strong> <br />
+                        od 2 000 Kč po ČR
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 py-4 d-flex align-items-center benefit">
+                    <p class="font-lg ms-3 mb-0 lh-base">
+                        <strong> 10 200+ výdejních míst</strong> <br />
+                        v ČR a SK - Zásilkovna
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 py-4 d-flex align-items-center benefit">
+                    <p class="font-lg ms-3 mb-0 lh-base">
+                        <strong>Rychlé doručení</strong> <br />
+                        po ČR i na Slovensko
+                    </p>
+                </div>
+            </div>
 
+            <!-- Products -->
+            <h2 class="h1 text-center mt-5 mb-5">3 nejlepší medy manuka</h2>
+
+            <div class="row px-5 py-5">
+                <div class="col-12 col-lg-4 p-0">
+                    <div class="card">
+                        <a href="#" class="d-flex justify-content-center card-img"
+                            ><img src="./images/109-3_manuka-med-naki-umf-25-1200-mgo--250g.jpg" alt="" />
+                            <div class="card-img-overlay">
+                                <span class="badge text-bg-secondary">Novinka</span>
+                                <br />
+                                <span class="badge text-bg-info">Tip</span>
+                            </div>
+                        </a>
+                        <div class="card-body text-center">
+                            <h3><a href="#">Manuka med Naki UMF 25+ (1200 MGO) 250g</a></h3>
+
+                            <span class="d-block text-success py-2">Skladem</span>
+
+                            <strong class="d-block fs-3 py-2">2 690 Kč</strong>
+
+                            <form action="/action/" method="post" class="d-flex justify-content-center py-2 mb-3">
+                                <div class="input-group w-auto flex-nowrap quantity-group">
+                                    <input
+                                        type="button"
+                                        value="-"
+                                        class="btn-quantity btn-quantity-plus border-0"
+                                        data-field="quantity"
+                                    />
+
+                                    <input
+                                        type="number"
+                                        step="1"
+                                        min="1"
+                                        max="9999"
+                                        value="1"
+                                        name="quantity"
+                                        class="quantity-field border-0 radius-0 outline-none text-center flex-1"
+                                        autocomplete="off"
+                                        data-decimals="0"
+                                        data-max="9999"
+                                        data-min="1"
+                                        aria-label="Množství"
+                                    />
+
+                                    <input
+                                        type="button"
+                                        value="+"
+                                        class="btn-quantity btn-quantity-minus border-0"
+                                        data-field="quantity"
+                                    />
+                                </div>
+                                <button type="submit" class="btn btn-cart">Do košíku</button>
+                            </form>
+                            <p>
+                                Složení: 100% divoký novozélandský med Manuka. Náš nejcennější med a elektrárna síly a
+                                čistoty. 25+ představuje med mānuka nejvyšší třídy dostupný z našich úlů Taranaki....
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 p-0">
+                    <div class="card">
+                        <a href="#" class="d-flex justify-content-center card-img"
+                            ><img src="./images/46-6_manuka-med-20-square.jpg" alt="" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h3><a href="#">Manuka med Naki UMF 20+ (829 MGO) 250g </a></h3>
+
+                            <span class="d-block text-success py-2">Skladem</span>
+
+                            <strong class="d-block fs-3 py-2">1650 Kč</strong>
+
+                            <form action="/action/" method="post" class="d-flex justify-content-center py-2 mb-3">
+                                <div class="input-group w-auto flex-nowrap quantity-group">
+                                    <input
+                                        type="button"
+                                        value="-"
+                                        class="btn-quantity btn-quantity-plus border-0"
+                                        data-field="quantity"
+                                    />
+
+                                    <input
+                                        type="number"
+                                        step="1"
+                                        min="1"
+                                        max="9999"
+                                        value="1"
+                                        name="quantity"
+                                        class="quantity-field border-0 radius-0 outline-none text-center flex-1"
+                                        autocomplete="off"
+                                        data-decimals="0"
+                                        data-max="9999"
+                                        data-min="1"
+                                        aria-label="Množství"
+                                    />
+
+                                    <input
+                                        type="button"
+                                        value="+"
+                                        class="btn-quantity btn-quantity-minus border-0"
+                                        data-field="quantity"
+                                    />
+                                </div>
+                                <button type="submit" class="btn btn-cart">Do košíku</button>
+                            </form>
+                            <p>
+                                Složení: 100% divoký novozélandský med Manuka. Manukový med UMF™ 20+ je druhý
+                                nejsilnější med z našich úlů Taranaki. Silnější, zemitější chuť a slavný "Taranaki tang"
+                                jistě...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 p-0">
+                    <div class="card">
+                        <a href="#" class="d-flex justify-content-center card-img"
+                            ><img src="./images/43-5_manuka-med-15-square.jpg" alt="" />
+                        </a>
+                        <div class="card-body text-center">
+                            <h3><a href="#">Manuka med Naki UMF 15+ (514 MGO) 250g </a></h3>
+
+                            <span class="d-block text-success py-2">Skladem</span>
+
+                            <strong class="d-block fs-3 py-2">990 Kč</strong>
+
+                            <form action="/action/" method="post" class="d-flex justify-content-center py-2 mb-3">
+                                <div class="input-group w-auto flex-nowrap quantity-group">
+                                    <input
+                                        type="button"
+                                        value="-"
+                                        class="btn-quantity btn-quantity-plus border-0"
+                                        data-field="quantity"
+                                    />
+
+                                    <input
+                                        type="number"
+                                        step="1"
+                                        min="1"
+                                        max="9999"
+                                        value="1"
+                                        name="quantity"
+                                        class="quantity-field border-0 radius-0 outline-none text-center flex-1"
+                                        autocomplete="off"
+                                        data-decimals="0"
+                                        data-max="9999"
+                                        data-min="1"
+                                        aria-label="Množství"
+                                    />
+
+                                    <input
+                                        type="button"
+                                        value="+"
+                                        class="btn-quantity btn-quantity-minus border-0"
+                                        data-field="quantity"
+                                    />
+                                </div>
+                                <button type="submit" class="btn btn-cart">Do košíku</button>
+                            </form>
+                            <p>
+                                Složení: 100% divoký novozélandský med Manuka. Tento med zlaté třídy, o krok výš od naší
+                                manuky 12+, nabízí vyšší úroveň čistoty a účinnosti. Vychutnejte si minerály bohaté,...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="mt-4 mb-4">Manukový Med z Nového Zélandu</h1>
+            <p class="mb-5 mw-lg-60">
+                Mānuka je velmi vyhledávaným medem pro svou chuť i zdravotně prospěšné látky, které obsahuje. Skutečný
+                med mānuka může pocházet pouze z jednoho místa – Nového Zélandu. I tak je důležité si vybírat pouze
+                ověřené dodavatele, kteří mají celý proces výroby pod kontrolou od začátku do konce. To splňují právě
+                naše medy Naki, které pochází z člověkem nezasažené přírody z okolí sopky, kde kvetou pouze květy
+                manuky, což zaručuje maximální koncetraci prospěšných látek.
+            </p>
+
+            <a href="#" class="d-flex my-3"
+                ><img src="./images/banner-zdravotni-benefity-manuka-medu.png" class="w-100"
+            /></a>
+
+            <a href="#" class="d-block my-3"><img src="./images/banner-umf-kvalita-manuka-medu.png" class="w-100" /></a>
+
+            <a href="#" class="d-block my-3"><img src="./images/banner-koupit-manuka-med.png" class="w-100" /></a>
+        </main>
+        {{> _footer }}
+
+        <script type="module" src="./ts/main.ts"></script>
+        <script type="module" src="./ts/main.js"></script>
+    </body>
 </html>

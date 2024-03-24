@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+$white: #fff;
+$body-bg: $white;
+$yellow: #fbc41e;
+
+// scss-docs-start color-variables
+$blue:    #0d6efd !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #d63384 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #fbc41e;
+$green:   #009901;
+$teal:    #20c997 !default;
+$cyan:    #59d6e4;
+// scss-docs-end color-variables
+
+$color: #3b3b54; // text color
+$new: #6b5ea6;
+$dark: #333041;
+$border-radius: .4rem;
+
+// scss-docs-start theme-color-variables
+$primary:       $yellow;
+$secondary:     #6b5ea6;
+// scss-docs-end theme-color-variables
+
+// scss-docs-end theme-color-variables
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+$font-family-sans-serif: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+// $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
+// $font-size-base affects the font size of the body text
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-sm:                0.813rem; // ~ 13px;
+$font-size-lg:                1.125rem; // ~ 18px;
+//line-height: 1.384615;
+
+//$font-weight-lighter:         lighter !default;
+//$font-weight-light:           300 !default;
+//$font-weight-normal:          400 !default;
+//$font-weight-medium:          500 !default;
+//$font-weight-semibold:        600 !default;
+//$font-weight-bold:            700 !default;
+//$font-weight-bolder:          bolder !default;
+
+$line-height-base:            1.4;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+$h1-font-size:                2.125rem; // 34px
+$h2-font-size:                1.5rem; // 25px
+$h3-font-size:                1.25rem; // 20px #1a1937
+$h4-font-size:                $font-size-base * 1.5 !default; //
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-sm;
+
+// scss-docs-start headings-variables
+//$headings-margin-bottom:      $spacer * .5 !default;
+$headings-font-family:        null !default;
+$headings-font-style:         null !default;
+$headings-font-weight:        700;
+$headings-line-height:        1.1;
+$headings-color:              inherit !default;
+
+// grid-breakpoints
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+
+$container-max-widths: (
+        sm: 540px,
+        md: 720px,
+        lg: 960px,
+        xl: 1140px,
+        xxl: 1458px // 1418px + 40px
+);
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-gutter-width:           2.5rem; // gutter/2
+
+// Container padding
+
+$container-padding-x: $grid-gutter-width;
+
+// borders
+$border-color: #474454;
+
+//NAVS
+//$nav-link-padding-y: .6rem;
+//$nav-link-padding-x: 1rem;
+$nav-link-font-size: 0.875rem;
+$nav-link-font-weight: 300;
+$nav-link-color: rgba($white, 0.7);
+$nav-link-hover-color: rgba($white,1.0);
+
+
+// Offcanvas
+
+// scss-docs-start offcanvas-variables
+$offcanvas-padding-y:               0;
+$offcanvas-padding-x:               0;
+$offcanvas-horizontal-width:        100%;
+$offcanvas-vertical-height:         100vh;
+$offcanvas-transition-duration:     .3s;
+$offcanvas-border-color:            transparent;
+$offcanvas-border-width:            0;
+$offcanvas-title-line-height:       1;
+$offcanvas-bg-color:                $white;
+$offcanvas-box-shadow:              false;
+$offcanvas-backdrop-bg:             transparent;
+$offcanvas-backdrop-opacity:        1;
+
+// TEMPORARY, TODO: Refactor
+
+// Dropdowns
+$dropdown-bg: #333041;
+$dropdown-font-size: .875rem;
+$dropdown-border-radius:            0;
+$dropdown-inner-border-radius:      0;
+$dropdown-link-color:               $nav-link-color;
+$dropdown-link-hover-color:         $nav-link-hover-color;
+$dropdown-link-hover-bg:            $dropdown-bg;
+
+$navbar-dark-icon-color:           $white;
+//$navbar-dark-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-icon-color}' d='M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z'/></svg>");
+$navbar-dark-toggler-border-color:  none;
+
+// Cards
+
+// scss-docs-start card-variables
+$card-spacer-y:                     0.875rem;
+$card-spacer-x:                     0.875rem;
+//$card-title-spacer-y:               $spacer * .5 !default;
+//$card-title-color:                  null !default;
+//$card-subtitle-color:               null !default;
+$card-border-width:                 0;
+$card-border-color:                 transparent;
+$card-border-radius:                0;
+$card-box-shadow:                   0 0 30px rgba(32, 29, 41, 0.08);
+$card-inner-border-radius:          0;
+//$card-cap-padding-y:                $card-spacer-y * .5 !default;
+//$card-cap-padding-x:                $card-spacer-x !default;
+//$card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03) !default;
+//$card-cap-color:                    null !default;
+//$card-height:                       null !default;
+//$card-color:                        null !default;
+$card-bg:                           $white;
+//$card-img-overlay-padding:          $spacer !default;
+//$card-group-margin:                 $grid-gutter-width * .5 !default;
+// scss-docs-end card-variables
+
+
+// Badges
+
+// scss-docs-start badge-variables
+$badge-font-size:                   0.625rem;
+$badge-font-weight:                 400;
+$badge-color:                       $white;
+$badge-padding-y:                   0.25rem;
+$badge-padding-x:                   0.5rem;
+$badge-border-radius:               0;
+// scss-docs-end badge-variables
