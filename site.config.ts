@@ -1,47 +1,47 @@
 // Site Infomation
 const siteData = {
-  root: 'src',
-  locale: 'en',
-  siteName: 'VITAM Docs',
-  shortName: 'VITAM',
-  description: 'VITAM is a front-end template with Vite for static websites.',
-  url: 'https://vitam.pages.dev/',
-  ogpImage: 'ogp.jpg',
-  ogType: 'website',
-  fbAppId: '',
-  fbAdmins: '',
-  twitterCard: 'summary_large_image',
-  twitterSite: '@SiteAccount',
-  themeColor: '#FFA800',
-  backgroundColor: '#fff'
-}
-
+    root: 'src',
+    locale: 'cs',
+    siteName: 'manukacesko.cz',
+    shortName: 'Manuka',
+    description:
+        'Mānuka med je vyhledávaným medem pro svou chuť i zdravotně prospěšné látky. Skutečný mānukový med pochází pouze z Nového Zélandu. Doprava zdarma od 2000 Kč',
+    url: 'https://www.manukacesko.cz/',
+    ogpImage: 'ogp.jpg',
+    ogType: 'website',
+    fbAppId: '',
+    fbAdmins: '',
+    twitterCard: 'summary_large_image',
+    twitterSite: '@SiteAccount',
+    themeColor: '#FFA800',
+    backgroundColor: '#fff',
+};
 // Page Infomation
 const pagesData = {
-  '/index.html': {
-    locale: siteData.locale,
-    title: `Development template for front-end | ${siteData.siteName}`,
-    description: `Welcome to VITAM! ${siteData.description}`,
-    url: `${siteData.url}`,
-    ogpImage: siteData.ogpImage,
-    ogType: siteData.ogType,
-    fbAppId: siteData.fbAppId,
-    fbAdmins: siteData.fbAdmins,
-    twitterCard: siteData.twitterCard,
-    twitterSite: siteData.twitterSite
-  },
-  '/sample/index.html': {
-    locale: siteData.locale,
-    title: `Smaple Page | ${siteData.siteName}`,
-    description: `This is a sample page. ${siteData.description}`,
-    url: `${siteData.url}/sampple/`,
-    ogpImage: siteData.ogpImage,
-    ogType: 'article',
-    fbAppId: siteData.fbAppId,
-    fbAdmins: siteData.fbAdmins,
-    twitterCard: siteData.twitterCard,
-    twitterSite: siteData.twitterSite
-  },
-}
+    '/index.html': {
+        locale: siteData.locale,
+        title: `Manukový Med z Nového Zélandu | ${siteData.siteName}`,
+        description: `${siteData.description}`,
+        url: `${siteData.url}`,
+        ogpImage: siteData.ogpImage,
+        ogType: siteData.ogType,
+        fbAppId: siteData.fbAppId,
+        fbAdmins: siteData.fbAdmins,
+        twitterCard: siteData.twitterCard,
+        twitterSite: siteData.twitterSite,
+    },
+    '/pages/manuka-medy.html': {
+        locale: siteData.locale,
+        title: `Manuka medy | ${siteData.siteName}`,
+        description: `${siteData.description}`,
+        url: `${siteData.url}/pages/`,
+        ogpImage: siteData.ogpImage,
+        ogType: 'article',
+        fbAppId: siteData.fbAppId,
+        fbAdmins: siteData.fbAdmins,
+        twitterCard: siteData.twitterCard,
+        twitterSite: siteData.twitterSite,
+    },
+};
 
 export { siteData, pagesData };
