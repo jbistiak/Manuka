@@ -34,3 +34,12 @@ package-lock.json
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/libraries/cache.xml
+/.idea/stylesheetLinters/stylelint.xml
+/.idea/.gitignore
+/.idea/Manuka.iml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/vcs.xml
